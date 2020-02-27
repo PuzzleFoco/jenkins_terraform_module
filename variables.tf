@@ -4,5 +4,6 @@ variable "agent" {
         "enabled": "true",
         "image": "getintodevops/jenkins-withdocker",
         "tag": "lts-docker19.03.5"
+        "alwaysPullImage" : "true"
     }
 }
