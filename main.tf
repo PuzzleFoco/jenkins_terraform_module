@@ -1,4 +1,5 @@
 locals {
+
     values_yaml_rendered = templatefile("${path.module}/values.yaml.tpl",{
         agent = var.agent
     })
@@ -20,5 +21,5 @@ resource "helm_release" "jenkins"{
     version     = "1.9.19"
     timeout     = 600
 
-    values = [locals.values_yaml_rendered]
+    values = [local.values_yaml_rendered]
 }
