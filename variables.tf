@@ -1,3 +1,10 @@
+variable "master" {
+    type = any
+    default = {
+        "numExecutors": "2",
+    }
+}
+
 variable "agent" {
     type = any
     default = {

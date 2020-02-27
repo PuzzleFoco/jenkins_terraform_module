@@ -1,7 +1,8 @@
 locals {
 
     values_yaml_rendered = templatefile("${path.module}/values.yaml.tpl",{
-        agent = var.agent
+        master = var.master,
+        agent  = var.agent
     })
 }
 
