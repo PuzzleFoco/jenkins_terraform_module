@@ -22,4 +22,9 @@ resource "helm_release" "jenkins"{
     timeout     = 600
 
     values = [local.values_yaml_rendered]
+
+    set {
+        name = "master.adminPassword"
+        value = "test123"
+    }
 }
