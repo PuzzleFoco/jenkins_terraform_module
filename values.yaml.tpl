@@ -20,3 +20,6 @@ agent:
     - type: HostPath
       hostPath: /var/run/docker.sock
       mountPath: /var/run/docker.sock
+
+networkPolicy:
+  enabled: true
