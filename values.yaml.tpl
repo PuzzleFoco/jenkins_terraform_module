@@ -1,5 +1,14 @@
 master:
   numExecutors: ${master.numExecutors}
+  extraPorts:
+  - name: ssh
+    port: 2222
+    externalPort: 22
+    protocol: TCP
+  - name: slvlistener-jen
+    port: 50000
+    externalPort: 50000
+    protocol: TCP
 
 agent:
   enabled: ${agent.enabled}
