@@ -1,32 +1,19 @@
 master:
   installPlugins:
-<<<<<<< values.yaml.tpl
     - matrix-auth:2.6.2
     - kubernetes:1.26.4
-=======
-    - matrix-auth:2.6.1
-    - kubernetes:1.26.0
->>>>>>> values.yaml.tpl
     - docker-workflow:1.23
     - workflow-job:2.39
     - workflow-aggregator:2.6
     - credentials-binding:1.23
     - git:4.2.2
-<<<<<<< values.yaml.tpl
     - credentials:2.3.12
-=======
-    - credentials:2.3.7
->>>>>>> values.yaml.tpl
     - job-dsl:1.77
     - kubernetes-cd:2.3.0
     - kubernetes-cli:1.8.3
   JCasC:
     enabled: true
-<<<<<<< values.yaml.tpl
     pluginVersion: "1.42"
-=======
-    pluginVersion: "1.36"
->>>>>>> values.yaml.tpl
     configScripts:
       welcome-message: |
         jenkins:
